@@ -1,0 +1,24 @@
+{
+  "name": "sprouse-bot",
+  "version": "1.0.0",
+  "description": "I am a beginner at JS, so much of the work in this respirtory may be quite poor. This project is just for my own entertainment and to further my knowledge of JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FiveWattFender/sprouse-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FiveWattFender/sprouse-bot/issues"
+  },
+  "homepage": "https://github.com/FiveWattFender/sprouse-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
