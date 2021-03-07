@@ -6,9 +6,16 @@ client.on('ready', () => {
     console.log('Bot Running');
 });
 
-client.login(process.env.BOT_TOKEN) // logon to server
+// logon to server with token
+client.login(process.env.BOT_TOKEN) 
 
-// listen for "Hello" from a user, bot will reply "Hi!"
+// Basic commands, may be moved later (will also be converted to switches, im just lazy)
 client.on('message', (msg) => {
-    if (msg.content === 'Hello') msg.reply('Hi!');
+    if (msg.channel.type !='text' || message.author.bot || !message.startsWith('!'))
+    return;
+    
+    // ping pong lol
+    if (message.conten === '*ping') {
+        message.channel.send('pong');
+    }
 });
