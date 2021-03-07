@@ -11,11 +11,11 @@ client.login(process.env.BOT_TOKEN)
 
 // Basic commands, may be moved later (will also be converted to switches, im just lazy)
 client.on('message', (msg) => {
-    if (msg.channel.type !='text' || message.author.bot || !message.startsWith('!'))
+    if (msg.channel.type !='text' || msg.author.bot || !msg.startsWith('!'))
     return;
     
     // ping pong lol
-    if (message.conten === '*ping') {
-        message.channel.send('pong');
+    if (msg.content === '*ping') {
+        msg.channel.send('pong');
     }
 });
