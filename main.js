@@ -10,4 +10,11 @@ client.on('ready', () => {
 // logon to server with token
 client.login(process.env.BOT_TOKEN) 
 
-
+client.on("message", (message) => {
+    if (!message.content.startsWith(config.prefix) || message.author.bot)
+    return;
+//basic ping pong test
+    if (message.content === config.prefix + 'ping') {
+        message.channel.send("pong!");
+    };
+});
