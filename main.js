@@ -15,6 +15,6 @@ client.on("message", (message) => {
     return;
 //basic ping pong test
     if (message.content === config.prefix + 'ping') {
-        message.channel.send("pong!");
+        message.channel.send("shut your mouth");
     };
 });
